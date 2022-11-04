@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+  application:
+    name: billing-service
+  datasource:
+    url: jdbc:h2:mem:bill-db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+server:
+  port: 8085
